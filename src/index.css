@@ -1,0 +1,422 @@
+
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #333;
+}
+
+i{
+  color: #abb0f0;
+}
+
+p{
+  font-size: large;
+  text-align: justify;
+}
+
+button{
+  padding: 14px;
+  color: white;
+  background-color: #2d345a;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.button-1{
+  padding: 9px;
+}
+
+.App{
+  background-color: #abb0f0;
+}
+
+.Navbar{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d345a;
+  width: 100%;
+
+}
+
+.Navbar > .nav-logo{
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffff;
+  margin-left: 10px;
+}
+
+.Navbar > .nav-items > a{
+  margin: 15px;
+  color: #ffff;
+  text-decoration: none;
+  position: relative;
+}
+
+
+.Navbar > .nav-toggle{
+  display: none;
+}
+
+.hero-section{
+  background-image: url('img/maxim-hopman-Q_l5NzA8o4Y-unsplash.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section h1,
+.hero-section h3{
+  color:white;
+  margin-bottom: 15px;
+ 
+}
+
+.about{
+  padding: 60px;
+  padding-bottom: 0px;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  text-align: center;
+}
+
+.about-text{
+  margin-bottom: 30px;
+}
+
+.about-banners{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .banner-text{
+  position: absolute;
+  bottom: 100px;
+}
+
+.banner .banner-text h2,
+.banner .banner-text p{
+  color: white;
+  margin-bottom: 15px;
+}
+
+.banner .banner-text p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.services{
+  padding: 60px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.services .title h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.services h3{
+  font-size: large;
+  text-align: start;
+}
+
+.services .subtitle{
+  margin-bottom: 15px;
+}
+
+.collections{
+  padding: 60px;
+  text-align: center;
+}
+
+.collections h3{
+  font-size: large;
+}
+
+.collections p{
+  text-align: center;
+}
+
+.collections .header{
+  margin-bottom: 50px;
+}
+
+.collections .grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.collections .body{
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px rgba(20, 20,20, 0.2);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.collections .body img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.body .body-desc{
+ padding-bottom: 15px;
+}
+
+.body .body-desc *{
+  margin-bottom: 10px;
+}
+
+.body .body-desc h2{
+  color:#2d345a;
+}
+
+.body .body-desc button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contact{
+  padding: 60px;
+  padding-top: 0px;
+}
+
+.contact h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact .body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .body .contact-info{
+  width: 45%;
+}
+
+.contact-info{
+  margin-bottom: 30px;
+}
+
+.contact-info .header-p{
+  margin-bottom: 30px;
+}
+
+.contact-info .indi-contact{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.indi-contact .icon{
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #2d345a;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 40px;
+  background-color: #2d345a;
+}
+
+.contact form input{
+  margin-bottom: 30px;
+  height: 40px;
+  padding: 10px;
+}
+
+.contact form .message{
+  height: 55px;
+}
+
+.contact button{
+  background-color: #3b4da7;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2d345a;
+  color: white;
+}
+
+@media (max-width:860px){
+  .collections .body{
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:700px){
+  .Navbar > .nav-items{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    background: #3b4da7;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all .45s;
+    z-index: 2;
+  }
+
+  .Navbar > .nav-items.open{
+    transform: translateX(0);
+  }
+
+  .Navbar > .nav-toggle{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .nav-toggle > .bar{
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #ffff;
+  }
+
+  .nav-toggle > .bar::after,
+  .nav-toggle > .bar::before{
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      background: #ffff;
+      transition: all 0.4s ease-in-out;
+      width: 32px;
+      height: 2px;
+  }
+
+  .nav-toggle > .bar::after{
+    transform: translateY(8px);
+  }
+
+  .nav-toggle > .bar::before{
+    transform: translateY(-8px);
+  }
+
+  .nav-toggle.open > .bar{
+    background: transparent;
+    transform: translateX(-40px) ;
+
+  }
+
+  .nav-toggle.open > .bar::before{
+    transform: rotate(45deg)  translate(26px, -26px);
+  }
+
+  .nav-toggle.open > .bar::after{
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+
+  .hero-text{
+    padding-left: 20px;
+    padding-right: 10px;
+    align-items: flex-start;
+  }
+
+  .about{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-banners{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner{
+    width: 100%;
+    height: 370;
+  }
+
+  .services{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .collections{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .collections .grid{
+    flex-direction: column;
+  }
+
+  .collections .body{
+    width: 100%;
+    margin-bottom: 20px;
+    
+  }
+
+  .contact{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact .body{
+    flex-direction: column;
+  }
+
+  .contact .body .contact-info{
+    width: 100%;
+  }
+
+  .contact form{
+    width: 100%;
+  }
+
+}
